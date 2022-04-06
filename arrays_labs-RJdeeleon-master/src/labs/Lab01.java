@@ -1,6 +1,7 @@
 package labs;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Lab01 {
 
@@ -8,59 +9,66 @@ public class Lab01 {
 	
 	
 	public static void problem01() {
-		
-		
-		
+		String[] word = new String[8];
 	}
 
 
 	public static int[] problem02() {
+		int[] num = new int[5];
+		int[] numbers = {2,4,5,8,16,2,-3,5,-9,0,9,6};
 		
-		
-		
-		return null;
+		return numbers;
 	}
 
 
 	public static int problem03() {
-		
-		
-		
-		return 0;
+		return nums[3];
 	}
 
 
 	public static int problem04() {
-		
-		
-		
-		return 0;
+		 Scanner inKey = new Scanner(System.in);
+         System.out.println("Enter an integer");
+         int num = inKey.nextInt();
+         
+         if (num < 0 || num >= nums.length)
+         {
+         return -50;
+         }
+         else {
+                 return nums[num];
+         }
+         
 	}
 
 
 	public static int problem05() {
-		
-		
-		
-		return 0;
+		return nums[nums.length-1];
 	}
 
 
 	public static boolean problem06() {
-		
-		
-		
-		return false;
+		boolean f = false; 
+		for (int i = 0; i < nums.length; i++)
+		{
+			if (nums[i] > 10)
+			{
+				f = true;
+			}
+		}
+		return f;
 	}
 
 
-	public static int problem07() {
+public static int problem07() {
 		
-		
-		
-		return -1;
+		int negNum = 0;
+		for (int i = 0; i < nums.length; i++ ) {
+			if (nums[i] < 0)
+				negNum++;
 	}
-
+		return negNum;
+	}
 
 	public static int problem08() {
 		
